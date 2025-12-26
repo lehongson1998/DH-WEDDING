@@ -39,8 +39,11 @@
   <body>
     <div class="container">
       <audio id="bg-music" src="MMBN.mp3" loop></audio>
+      <button id="music-btn" class="music-btn">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
 
-      <div id="overlay">Chạm để bật nhạc 🎵</div>
+      <!-- <div id="overlay">Chạm để bật nhạc 🎵</div> -->
       <div class="title">Hồng Sơn & Thuỳ Vân</div>
       <img src="images/image_2.png" alt="" class="spolight" />
       <div class="image-wraper">
@@ -290,6 +293,23 @@
       overlay.addEventListener("click", () => {
         music.play();
         overlay.remove();
+      });
+    </script>
+    <script>
+      const music1 = document.getElementById("bg-music");
+      const btn = document.getElementById("music-btn");
+
+      let isPlaying = false;
+
+      btn.addEventListener("click", () => {
+        if (isPlaying) {
+          music1.pause();
+          btn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        } else {
+          music1.play();
+          btn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        }
+        isPlaying = !isPlaying;
       });
     </script>
   </body>
