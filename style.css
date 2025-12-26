@@ -96,6 +96,7 @@
   display: flex;
   margin-top: 2rem;
   align-items: center;
+  justify-content: center;
 }
 
 .info-item {
@@ -228,7 +229,7 @@
 }
 
 .qr-img {
-  width: 50%;
+  width: 20rem;
   margin-top: 1rem;
   border-radius: 12px;
 }
