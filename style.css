@@ -212,8 +212,12 @@
 }
 
 .thank-you {
-  font-size: 3rem;
+  font-size: 1.6rem;
+  white-space: wrap;
   font-family: "Pattaya", cursive;
+  padding: 1rem;
+  background-color: #e1c491;
+  border-radius: 8px;
 }
 
 .happy {
@@ -284,4 +288,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.thank-you2 {
+  font-size: 3.5rem;
+  font-family: "Pattaya", cursive;
 }
