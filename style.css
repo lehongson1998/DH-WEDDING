@@ -105,6 +105,10 @@
   text-align: center;
 }
 
+.info-item h3 {
+  font-size: 1.4rem;
+}
+
 .division {
   width: 2px;
   background-color: #000;
@@ -492,5 +496,33 @@
 @media (max-width: 768px) {
   .lb-btn {
     font-size: 28px;
+  }
+}
+
+.guest-name {
+  margin: 10px 0 10px;
+  font-family: "Caveat", cursive;
+  font-size: 3.6rem;
+  color: #c9a44c;
+  letter-spacing: 2px;
+  animation: fadeUp 1.2s infinite alternate;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(12px);
+  }
+}
+
+.family {
+  font-family: "Caveat", cursive;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 360px) {
+  .info-item h3,
+  p {
+    font-size: 1.2rem;
   }
 }
